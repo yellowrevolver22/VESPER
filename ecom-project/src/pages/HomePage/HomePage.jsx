@@ -1,10 +1,10 @@
 import { Navbar } from "../../components/Navbar"
 import { ProductGrid } from "./ProductGrid"
 
-export function HomePage({products}){
+export function HomePage({products,setCart}){
   return (
     <main>
-      <ProductGrid products={products} />
+      <ProductGrid setCart={setCart} products={products} />
     </main>
   )
 }
