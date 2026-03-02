@@ -25,7 +25,7 @@ export function ProductGrid({ products, setCart }) {
 
   return (
     <div className="w-full h-full bg-gray-300 grid p-2 gap-5
-    grid-cols-[repeat(auto-fit,minmax(220px,1fr))]">
+    grid-cols-[repeat(auto-fill,minmax(220px,260px))] justify-center"> {/*auto fill keeps empty columns*/}
       {products.map((product) => {
         return (
           <div key={product.id} className="bg-white p-3 flex flex-col shadow

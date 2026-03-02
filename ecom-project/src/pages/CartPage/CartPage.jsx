@@ -49,7 +49,7 @@ export function CartPage({ cart, setCart, totalQuantity }) {
     <>
       <Navbar />
 
-      <div className="max-w-6xl mx-auto p-6 flex gap-8">
+      <div className="max-w-6xl mx-auto p-6 flex flex-col gap-8 sm:flex-row">
         {/* LEFT - CART ITEMS */}
         <div className="flex-1">
           <h1 className="text-2xl font-bold mb-6">
@@ -85,7 +85,7 @@ export function CartPage({ cart, setCart, totalQuantity }) {
           })}
         </div>
         {/* RIGHT - PAYMENT SUMMARY */}
-        <div className="w-75 pt-10">
+        <div className="mx-auto w-75 pt-10 sm:mx-0">
           <div className="bg-white rounded-xl shadow-md border p-5 sticky top-25">
             <h2 className="text-lg font-semibold mb-4">Payment Summary</h2>
 
